@@ -1,0 +1,230 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+.container {
+  width: 35vw;
+  margin: 0 auto;
+  padding: calc(15vh - 63px) 0 15rem 0;
+  display: block;
+  color: #fff;
+  @media screen and (max-width: 1000px) {
+    width: calc(85% + 20px);
+    padding: calc(15vh - 63px) 0 10rem 0;
+    margin: 0 0 0 calc(7.5% - 10px);
+  }
+}
+
+.subheader {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.4rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Sen", sans-serif;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 0.825rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 0.3rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Sen", sans-serif;
+  }
+}
+
+.headerLink {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Sen", sans-serif;
+  text-decoration: none;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 0.825rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Sen", sans-serif;
+    text-decoration: none;
+  }
+}
+
+.header {
+  font-size: 65px;
+  line-height: 65px;
+  font-weight: 400;
+  margin: 0.5rem auto;
+  padding: 0;
+  color: #fff;
+  font-family: "Sen", sans-serif;
+  width: 90%;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 48.75px;
+    line-height: 48.75px;
+    font-weight: 400;
+    margin: 0.375rem auto;
+    padding: 0;
+    color: #fff;
+    font-family: "Sen", sans-serif;
+    width: 90%;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 60px;
+    line-height: 50px;
+    width: calc(100% - 20px);
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.secondImage {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto 10px 5%;
+  @media screen and (max-width: 1000px) {
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+  }
+}
+
+.secondHeader {
+  font-family: "Sen", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+  width: 90%;
+  margin: 0 auto 1rem;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-family: "Sen", sans-serif;
+    font-size: 22.5px;
+    line-height: 22.5px;
+    font-weight: 600;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto 0.75rem;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 25px;
+    line-height: 25px;
+    width: calc(100% - 20px);
+    margin: 1rem auto;
+  }
+}
+
+.description {
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Sen", sans-serif;
+  width: 90%;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 15px;
+    line-height: 18.75px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: "Sen", sans-serif;
+    width: 90%;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 18px;
+    width: calc(100% - 20px);
+  }
+}
+
+.flexHeader {
+  display: flex;
+  align-items: center;
+  margin: 0 auto -5px;
+  width: 90%;
+  @media screen and (max-width: 1000px) {
+    width: calc(100% - 20px);
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #232323;
+  @media screen and (max-width: 1000px) {
+    margin: 0 auto;
+    width: calc(100% - 20px);
+  }
+}
+
+.author_date {
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Sen", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 15px;
+    line-height: 18.75px;
+    font-family: "Sen", sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 18px;
+    width: calc(100% - 20px);
+  }
+}
+
+.author_date:last-of-type {
+  width: 100%;
+  font-size: 24px;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 18px;
+  }
+}
+
+.subtitleh4 {
+  font-size: 22.5px;
+  line-height: 22.5px;
+  font-weight: 600;
+  font-family: "Sen", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  width: 90%;
+  margin: 0 auto 1rem;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 16.875px;
+    line-height: 16.875px;
+    font-weight: 600;
+    font-family: "Sen", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto 0.75rem;
+  }
+  @media screen and (max-width: 1000px) {
+    width: calc(100% - 20px);
+  }
+}

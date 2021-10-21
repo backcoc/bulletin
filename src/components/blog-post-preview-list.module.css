@@ -1,0 +1,175 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+.containerblog {
+  width: 100%;
+  padding-top: calc(15vh - 63px);
+  display: block;
+}
+
+.containerblogpostLink {
+  text-decoration: none;
+}
+
+.title {
+  width: 100%;
+  font-size: 65px;
+  line-height: 65px;
+  font-weight: 400;
+  font-family: "Sen", sans-serif;
+  color: #fff;
+  margin: 0;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    width: 100%;
+    font-size: 48.75px;
+    line-height: 48.75px;
+    font-weight: 400;
+    font-family: "Sen", sans-serif;
+    color: #fff;
+    margin: 0;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.subheader {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0.6rem 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-weight: 400;
+    font-size: 22.5px;
+    line-height: 22.5px;
+    color: #fff;
+    margin: 0.45rem 0;
+    padding: 0;
+    font-family: "Sen", sans-serif;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0.5rem 0;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+}
+
+.category {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: "Sen", sans-serif;
+  color: #fff;
+  margin: 0;
+  margin-right: 0.5rem;
+  padding: 0;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 18.75px;
+    line-height: 18.75px;
+    font-weight: 600;
+    font-family: "Sen", sans-serif;
+    color: #fff;
+    margin: 0;
+    margin-right: 0.375rem;
+    padding: 0;
+  }
+  @media screen and (max-width: 1000px) {
+    margin-top: 0.8rem;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "Sen", sans-serif;
+  }
+  @media screen and (max-width: 1000px) {
+    margin-top: 0rem;
+  }
+}
+
+.header {
+  font-size: 65px;
+  line-height: 65px;
+  font-weight: 400;
+  margin: 0 auto 1rem;
+  padding: 0;
+  color: #fff;
+  font-family: "Sen", sans-serif;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-size: 48.75px;
+    line-height: 48.75px;
+    margin: 0 auto 0.75rem;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+.maxWidth {
+  width: 32vw;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.maxWidth:first-of-type {
+  margin-top: 6rem;
+}
+
+.maxWidth:last-of-type {
+  padding-bottom: 10rem;
+}
+
+.desc {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  font-family: "Sen", sans-serif;
+  color: #fff;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    margin: 0 0 2.25rem 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18.75px;
+    line-height: 18.75px;
+    font-family: "Sen", sans-serif;
+    color: #fff;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 20px;
+  }
+}

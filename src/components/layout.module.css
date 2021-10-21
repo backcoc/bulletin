@@ -1,0 +1,232 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+.containerIconFooter {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background: var(--black);
+  min-height: calc(100vh - 63px - 100px);
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.footer {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  display: block;
+  background: var(--black);
+  overflow: hidden;
+  font-family: "Sen", sans-serif;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    display: block;
+    background: var(--black);
+    overflow: hidden;
+    font-family: "Sen", sans-serif;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    background: #000;
+    padding: 0;
+  }
+}
+
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 85%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.footerContainer {
+  display: block;
+
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 2rem;
+  }
+}
+.footerContainerMobile {
+  display: none;
+
+  @media screen and (max-width: 1000px) {
+    display: block;
+    margin-bottom: 2rem;
+  }
+}
+
+.footerContainer h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  width: max-content;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    color: #fff;
+    width: max-content;
+    margin-bottom: 0.375rem;
+    font-size: 15px;
+  }
+}
+
+.footerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  @media screen and (max-width: 1000px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.footerFlex svg,
+.footerFlex img {
+  height: 20px;
+  margin-right: 0.4rem;
+  color: #fff;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    height: 15px;
+    margin-right: 0.3rem;
+    color: #fff;
+  }
+}
+
+.footerFlex p,
+.footerFlex a {
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  margin: 0 0 0.5rem 0;
+  margin-right: 6rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18.75px;
+    margin: 0 0 0.375rem 0;
+    margin-right: 4.5rem;
+  }
+}
+
+.footerFlex p:last-of-type,
+.footerFlex a:last-of-type {
+  margin-right: 0;
+}
+
+.copy {
+  width: calc(100% - 100px);
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 auto;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    width: calc(100% - 100px);
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #fff;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+    align-items: start;
+    margin-left: 7.5%;
+    padding-bottom: 1rem;
+    width: 85%;
+  }
+}
+
+.copy div {
+  display: flex;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.copy div:first-of-type {
+  @media screen and (max-width: 1000px) {
+    /* flex-direction: row; */
+    display: flex;
+  }
+}
+
+.copy div:last-of-type {
+  @media screen and (max-width: 1000px) {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.copy div:first-of-type p {
+  margin-right: auto;
+}
+
+.copy p {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-left: 3.5rem;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-left: 2.625rem;
+  }
+  @media screen and (max-width: 1000px) {
+    margin: 0.4rem 0;
+  }
+}
+
+.copy h4 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: 1000px) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}

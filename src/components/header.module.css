@@ -1,0 +1,227 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+.background {
+  width: calc(100% - 200px);
+  height: 63px;
+  background: var(--black);
+  margin: 0 auto;
+  z-index: 197;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.navigation {
+  width: calc(100% - 100px);
+  height: 63px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  @media screen and (max-width: 1000px) {
+    width: 85%;
+  }
+}
+
+.logo {
+  margin-top: 16px;
+  height: 30px;
+  width: auto;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    margin-top: 16px;
+    height: 22.5px;
+    width: auto;
+  }
+}
+
+.square {
+  width: 21px;
+  height: 21px;
+  background: #fff;
+  z-index: 1000000000;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    width: 15.75px;
+    height: 15.75px;
+    background: #fff;
+    z-index: 1000000000;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.dropdown {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 196;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  min-height: 20vh;
+  @media screen and (max-width: 1000px) {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+}
+
+.dropdownContainer {
+  width: calc(100% - 200px);
+  min-height: 20vh;
+  background: #000;
+  position: fixed;
+  top: 63px;
+  left: 100px;
+  border-bottom: 1px solid #232323;
+  transition: all 0.4s ease-in-out;
+  @media screen and (max-width: 1000px) {
+    width: 100vw;
+    top: 63px;
+    left: 0;
+  }
+}
+
+.dropdownHeader {
+  width: 100%;
+  font-size: 104px;
+  line-height: 104px;
+  font-weight: 400;
+  margin: 0 0 0 50px;
+  padding: 15vh 0 0 0;
+  font-family: "Sen", sans-serif;
+  padding-bottom: 2rem;
+  color: #fff;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    width: 100%;
+    font-size: 78px;
+    line-height: 78px;
+    font-weight: 400;
+    margin: 0 0 0 50px;
+    padding: 11.25vh 0 0 0;
+    font-family: "Sen", sans-serif;
+    padding-bottom: 1.5rem;
+    color: #fff;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 65px;
+    line-height: 65px;
+    width: 85%;
+    margin: 0 0 0 7.5%;
+  }
+  @media screen and (min-width: 1001px) and (max-width: 1600px) {
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+
+.dropdownQuestion {
+  width: 100%;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 400;
+  margin: 2.5rem 0 2.5rem 50px;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  @media (-webkit-device-pixel-ratio: 2) and (width: 1440px) {
+    width: 100%;
+    font-weight: 400;
+    margin: 2.5rem 0 2.5rem 50px;
+    padding: 0;
+    font-family: "Sen", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 33.75px;
+    line-height: 33.75px;
+  }
+  @media screen and (min-width: 2449px) {
+    width: auto;
+  }
+  @media screen and (min-width: 1900px) {
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1001px) and (max-width: 1600px) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 2rem 0 2rem 7.5%;
+    width: 85%;
+    display: grid;
+    svg {
+      margin-left: 0;
+    }
+  }
+}
+
+.dropdownQuestion:last-of-type {
+  padding-bottom: 3rem;
+  @media screen and (min-width: 1900px) {
+    padding-bottom: 0rem;
+  }
+}
+
+.dropdownQuestion svg {
+  font-size: 1.75rem;
+}
+
+.flexContainer {
+  display: block;
+  @media screen and (min-width: 1900px) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: safe;
+}
+
+.headerlinks {
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  margin-right: 6rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Sen", sans-serif;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.bulletin_img {
+  height: 25px;
+  margin-right: 1rem;
+  color: #fff;
+}
